@@ -1,6 +1,6 @@
 {
   "name": "vue2_marquee",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "main": "dist/vue2Marquee.common.js",
   "author": {
