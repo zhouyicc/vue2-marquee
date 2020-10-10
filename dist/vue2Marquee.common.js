@@ -493,18 +493,20 @@ const components = {
     marquee: marquee
 };
 
-const install = function (Vue) {
-    Object.values(components).forEach(item => {
-        Vue.component(item.name, item)
-    })
+const installObj = {
+    install(Vue) {
+        Object.values(components).forEach(item => {
+            Vue.component(item.name, item)
+        })
+    }
 };
 
 if (typeof window !== "undefined" && window.Vue) {
-    install(window.Vue);
+    window.Vue.use(installObj);
 }
 
 /* harmony default export */ var packages_0 = ({
-    install,
+    install: installObj.install,
     components
 });
 
