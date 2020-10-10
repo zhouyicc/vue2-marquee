@@ -15,11 +15,17 @@
                 <span>{{Math.random()}}</span>
             </div>
         </marquee-components>
+
+        <v2-marquee>
+            <div v-for="item in listArray" :key="item" class="padding-10">
+                <span>{{Math.random()}}</span>
+            </div>
+        </v2-marquee>
     </div>
 </template>
 
 <script>
-    import marqueeComponents from "./components/marquee/marquee"
+    import marqueeComponents from "../packages/marquee/src/index"
 
     export default {
         name: 'App',

@@ -1,11 +1,17 @@
 {
   "name": "vue2_marquee",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "main": "dist/vue2Marquee.common.js",
+  "author": {
+    "email": "cqmyzs@126.com",
+    "name": "zhouyicc"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "bulidIn": "vue-cli-service build --target lib --name vue2Marquee ./packages/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",

@@ -13,7 +13,7 @@
         vertical: "vertical"
     };
     export default {
-        name: "marquee",
+        name: "v2Marquee",
         props: {
             tempo: {
                 type: Number,
